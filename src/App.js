@@ -9,8 +9,8 @@ function App() {
   };
   return (
     <div>
-      <AddUser onSubmitHandler={onSubmitHandler}></AddUser>
-      <UserList data={userDetails}></UserList>
+      <AddUser onSubmitHandler={onSubmitHandler} />
+      <UserList data={userDetails} />
     </div>
   );
 }

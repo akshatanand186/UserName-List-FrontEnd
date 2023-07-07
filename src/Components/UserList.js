@@ -1,6 +1,8 @@
+import Card from "./Card";
+import classes from "./UserList.module.css";
 const UserList = (props) => {
   return (
-    <div>
+    <Card className={classes.table}>
       <table className="result">
         <thead>
           <tr>
@@ -17,7 +19,7 @@ const UserList = (props) => {
           ))}
         </tbody>
       </table>
-    </div>
+    </Card>
   );
 };
 
