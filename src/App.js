@@ -4,7 +4,6 @@ import UserList from "./Components/UserList";
 function App() {
   const [userDetails, setUserDetails] = useState([]);
   const onSubmitHandler = (userInput) => {
-    console.log("hi from parent");
     setUserDetails((prev) => [...prev, userInput]);
   };
   return (

@@ -1,17 +1,20 @@
 .button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    padding: 10px;
-    width: 120px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
-  .button:hover {
-    background-color: #45a049;
-  }
+font: inherit;
+border: 1px solid #4f005f;
+border-radius: 4px;
+background-color: #4CAF50;
+color: white;
+transition: all 0.5s;
+padding: 0.25rem 1rem;
+cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+background: #26753e;
+border-color: #26753e;
+}
+
+.button:focus {
+outline: none;
+}

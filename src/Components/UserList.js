@@ -12,7 +12,7 @@ const UserList = (props) => {
         </thead>
         <tbody>
           {props.data.map((user) => (
-            <tr>
+            <tr key= {Math.random()}>
               <td>{user.username}</td>
               <td>{user.age}</td>
             </tr>
