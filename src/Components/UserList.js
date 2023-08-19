@@ -3,7 +3,7 @@ import classes from "./UserList.module.css";
 const UserList = (props) => {
   return (
     <Card className={classes.table}>
-      <table className="result">
+      <table>
         <thead>
           <tr>
             <th>UserName</th>
@@ -12,7 +12,7 @@ const UserList = (props) => {
         </thead>
         <tbody>
           {props.data.map((user) => (
-            <tr key= {Math.random()}>
+            <tr key={Math.random()}>
               <td>{user.username}</td>
               <td>{user.age}</td>
             </tr>
